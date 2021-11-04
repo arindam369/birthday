@@ -1,0 +1,30 @@
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+button{
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border-radius: 12px;
+    outline: none;
+    transition: transform .22s;
+    transition: background-color 2s;
+    animation: scaleUpDown 2s infinite;
+}
+button:active{
+    transform: translateY(10%);
+    transform: rotateY(30deg)
+}
+button:hover{
+    filter: brightness(120%);
+    color: blue;
+    background-color: rgb(45, 206, 24);
+}
+@keyframes scaleUpDown{
+    50%{
+        transform:scale(1.2);
+    }
+}

@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .bg{
     display: flex;
     justify-content: center;
@@ -5,7 +10,7 @@
     min-height: 100vh;
     background-color: black;
 }
-button{
+#btn{
     font-size: 1.1rem;
     padding: 10px 25px;
     border-radius: 12px;
@@ -27,4 +32,38 @@ button:hover{
     50%{
         transform:scale(1.2);
     }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+.messageCard{
+    position: absolute;
+    color: brown;
+    background-image : linear-gradient(rgb(224, 134, 16),rgb(240, 198, 143),white,rgb(240, 198, 143),rgb(224, 134, 16)) ;
+    height: 175px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.2rem;
+    padding: 40px 20px;
+    line-height: 35px;
+    transition: transform .22s;
+    animation: scaleLeftRight 1s infinite;
+}
+@keyframes scaleLeftRight{
+    50%{
+        transform: scale(.95);
+        opacity: .75;
+    }
+}
+#okayButton{
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border-radius: 12px;
+    outline: none;
+    transition: transform .22s;
+    transition: background-color 2s;
+    /* animation: scaleUpDown 2s infinite; */
+    background-color: green;
+    margin-top: 25px;
 }

@@ -1,26 +1,59 @@
-// var music1 = document.getElementById("mymusic");
+var mymusic = document.getElementById("mymusic");
 const container = document.getElementById("container");
 const backButton = document.getElementById("back-button");
 const card = document.getElementById("card");
 const blinkText = document.getElementById("blinkWishText");
 const giftMessage = document.getElementById("gift-msg");
+const cakeButton = document.getElementById("cakeButton");
+const cutCakeButton = document.getElementById("cutCakeButton");
+const cake = document.getElementById("cake");
+const eatMessage = document.getElementById("eatMessage");
+const eatingFace = document.getElementById("eatingFace");
+const eatDoneButton = document.getElementById("eatDoneButton");
+const giftMessageCard = document.getElementById("giftMessageCard");
+
+const c1 = document.getElementById("c1");
+const c2 = document.getElementById("c2");
+const c3 = document.getElementById("c3");
+const c4 = document.getElementById("c4");
+const c5 = document.getElementById("c5");
+const c6 = document.getElementById("c6");
+
+
 
 backButton.hidden = true;
 card.hidden = true;
 giftMessage.hidden = true;
+eatMessage.hidden = true;
+cakeButton.hidden = true;
+cake.hidden = true;
+cutCakeButton.hidden = true;
+eatingFace.hidden = true;
+eatDoneButton.hidden = true;
+giftMessageCard.hidden = true;
+
+c1.hidden = true;
+c2.hidden = true;
+c3.hidden = true;
+c4.hidden = true;
+c5.hidden = true;
+c6.hidden = true;
+
 
 window.onload = function () {
     setTimeout(function () {
-        document.getElementById("mymusic").onplay();
+        mymusic.play();
     }, 1000)
     setTimeout(function () {
-        backButton.hidden = false;
-    }, 100000);
+        cakeButton.hidden = false;
+    }, 10000);
 }
-
+document.body.addEventListener("mousemove",function(){
+    mymusic.play();
+})
 
 backButton.addEventListener("click", function () {
-    window.location.replace("countdown.html");
+    window.location.replace("./wish.html");
 })
 
 
@@ -260,17 +293,83 @@ const giftBoxOpen = document.getElementById("gift-box-open");
 const giftButton = document.getElementById("giftButton");
 giftBoxClose.hidden = true;
 giftBoxOpen.hidden = true;
-giftButton.hidden = true;
 
-function sendGiftButton() {
-    setTimeout(function () {
-        giftButton.hidden = false;
-    }, 12000);
-}
-sendGiftButton();
+cakeButton.addEventListener("click",function(){
+    blinkText.hidden = true;
+    allBalloonTextHidden();
+    hideBalloons();
+    cakeButton.hidden = true;
+    cake.hidden = false;
+    cake.animate([
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-10px)' },
+        { transform: 'translateY(0px)' },
+    ], {
+        duration: 1000,
+        iterations: Infinity
+    });
+    setTimeout(function(){
+        cutCakeButton.hidden = false;
+    },3000);
+    mymusic.play();
+})
+
+
+cutCakeButton.addEventListener("click",function(){
+    cutCakeButton.hidden = true;
+    cake.hidden = true;
+    c1.hidden = false;
+    c2.hidden = false;
+    c3.hidden = false;
+    c4.hidden = false;
+    c5.hidden = false;
+    c6.hidden = false;
+    eatingFace.hidden = false;
+    setTimeout(function(){
+        eatMessage.hidden = false;
+    },1000);
+    
+    setTimeout(function(){
+        eatMessage.hidden = true;
+    },9000);
+    setTimeout(function(){
+        eatDoneButton.hidden = false;
+    },10000);
+})
+eatDoneButton.addEventListener("click",function(){
+    eatingFace.hidden = true;
+    c1.hidden = true;
+    c2.hidden = true;
+    c3.hidden = true;
+    c4.hidden = true;
+    c5.hidden = true;
+    c6.hidden = true;
+    eatDoneButton.hidden = true;
+    giftMessageCard.hidden = false;
+})
+
+
+c1.addEventListener("click",function(){
+    c1.hidden = true;
+});
+c2.addEventListener("click",function(){
+    c2.hidden = true;
+});
+c3.addEventListener("click",function(){
+    c3.hidden = true;
+});
+c4.addEventListener("click",function(){
+    c4.hidden = true;
+});
+c5.addEventListener("click",function(){
+    c5.hidden = true;
+});
+c6.addEventListener("click",function(){
+    c6.hidden = true;
+});
 
 giftButton.addEventListener("click", function () {
-    giftButton.hidden = true;
+    giftMessageCard.hidden = true;
     blinkText.hidden = true;
     allBalloonTextHidden();
     hideBalloons();
@@ -313,4 +412,7 @@ giftMessage.addEventListener("click", function () {
     giftBoxOpen.hidden = true;
     giftMessage.hidden = true;
     card.hidden = false;
+    setTimeout(function () {
+        backButton.hidden = false;
+    }, 10000);
 })

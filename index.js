@@ -18,7 +18,7 @@ function updateDOM() {
         var today = date.getTime(); // we will get time in millisecond since January 1, 1970
 
         // birthDay = new Date(birthDate).getTime();
-        birthDay = 1636031598000;
+        birthDay = 1636137408000;
 
         timeDifference = birthDay - today;    // we will get the difference in milliseconds
 

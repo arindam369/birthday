@@ -76,7 +76,7 @@ window.addEventListener("click", function (event) {
     mouse.y = event.y;
     console.log(mouse);
 
-    const noOfParticles = 400;
+    const noOfParticles = 200;
     const angleIncrement = (2*Math.PI)/noOfParticles;
 
 
@@ -101,7 +101,7 @@ window.addEventListener("resize",function(){
 
 // automatic blast
 function init(){
-    const noOfParticles = 400;
+    const noOfParticles = 200;
     const angleIncrement = (2*Math.PI)/noOfParticles;
 
     var myX = Math.random()*innerWidth;

@@ -353,8 +353,21 @@ figcaption{
     .card{
         margin-left: 15px;
         width: 190px;
-        height: 300px;
+        height: 280px;
         font-size: .7rem;
+    }
+    .details{
+        top: 20px;
+        left: 0px;
+        padding: 5px 16px;
+    }
+    
+    h5{                      /* hey */
+        margin-bottom: 5px;
+        font-size: .6rem;
+    }
+    p{
+        font-size: .6rem;
     }
     h6{                     /* always... */
         margin-left: 1vh;
@@ -369,13 +382,9 @@ figcaption{
         margin-right: 14px;
         margin-top: 5px;
     }
-    h5{                      /* hey */
-        text-align: left;
-        margin-bottom: 5px;
-        font-size: .7rem;
-    }
+
     #cutCakeButton{
-        left: 39%;
+        left: 37%;
     }
     .wishText{
         font-size: 1.5rem;
@@ -394,7 +403,7 @@ figcaption{
         height: 70px;
     }
     #eatDoneButton{
-        left:40%;
+        left:39%;
     }
     #gift-box-close img{
         height: 17rem;
@@ -404,9 +413,9 @@ figcaption{
     }
     .gift-message{
         padding: 10px 10px;
-        margin-left: 20px;
+        margin-left: 0px;
         width: 150px;
-        font-size: .8rem;
+        font-size: .75rem;
     }
     #eatMessage{
         height: 40px;
@@ -414,15 +423,21 @@ figcaption{
         font-size: 1rem;
         margin-left: 38%;    
     }
+    #cakeButton{
+        left: 45%;
+    }
 }
 @media (max-width: 400px) {
    
     .card{
         margin-left: 25px;
         width: 150px;
-        height: 270px;
+        height: 265px;
         font-size: .55rem;
         padding-left: 5px;
+    }
+    p{
+        font-size: .55rem;
     }
     h6{                     /* always... */
         margin-left: 1vh;
@@ -495,5 +510,8 @@ figcaption{
         width: 140px;
         font-size: 1rem;
         margin-left: 36%;    
+    }
+    #cakeButton{
+        left: 40%;
     }
 }

@@ -19,8 +19,6 @@ const c4 = document.getElementById("c4");
 const c5 = document.getElementById("c5");
 const c6 = document.getElementById("c6");
 
-
-
 backButton.hidden = true;
 card.hidden = true;
 giftMessage.hidden = true;
@@ -39,7 +37,6 @@ c4.hidden = true;
 c5.hidden = true;
 c6.hidden = true;
 
-
 window.onload = function () {
     setTimeout(function () {
         mymusic.play();
@@ -51,7 +48,6 @@ window.onload = function () {
 document.body.addEventListener("mousemove",function(){
     mymusic.play();
 })
-
 backButton.addEventListener("click", function () {
     window.location.replace("./wish.html");
 })
@@ -108,9 +104,9 @@ function allBalloonTextHidden(){
 function balloonTextVisible(l1){
     l1.hidden = false;
 }
-
 allBalloonTextHidden();
 
+// alphabets
 const alpha1 = document.getElementById("1");
 const alpha2 = document.getElementById("2");
 const alpha3 = document.getElementById("3");
@@ -157,6 +153,7 @@ function allAlphaHidden() {
     blinkText.hidden = true;
 }
 allAlphaHidden();
+
 function wishVisible() {
     setTimeout(function () {
         alpha1.hidden = false;
@@ -256,6 +253,7 @@ function wishVisible() {
 }
 wishVisible();
 
+// balloon animations
 function animateBalloons(b1) {
     b1.hidden = false;
     b1.animate([
@@ -268,7 +266,6 @@ function animateBalloons(b1) {
         iterations: 1
     });
 }
-
 animateBalloons(b1);
 animateBalloons(b2);
 animateBalloons(b3);
@@ -294,6 +291,7 @@ const giftButton = document.getElementById("giftButton");
 giftBoxClose.hidden = true;
 giftBoxOpen.hidden = true;
 
+
 cakeButton.addEventListener("click",function(){
     blinkText.hidden = true;
     allBalloonTextHidden();
@@ -313,7 +311,6 @@ cakeButton.addEventListener("click",function(){
     },3000);
     mymusic.play();
 })
-
 
 cutCakeButton.addEventListener("click",function(){
     cutCakeButton.hidden = true;
@@ -336,6 +333,7 @@ cutCakeButton.addEventListener("click",function(){
         eatDoneButton.hidden = false;
     },10000);
 })
+
 eatDoneButton.addEventListener("click",function(){
     eatingFace.hidden = true;
     c1.hidden = true;
@@ -348,7 +346,7 @@ eatDoneButton.addEventListener("click",function(){
     giftMessageCard.hidden = false;
 })
 
-
+// eat/hide cakes
 c1.addEventListener("click",function(){
     c1.hidden = true;
 });
@@ -383,6 +381,7 @@ giftButton.addEventListener("click", function () {
         iterations: Infinity
     });
 })
+
 giftBoxClose.addEventListener("click", function () {
     giftBoxClose.hidden = true;
     giftBoxOpen.hidden = false;

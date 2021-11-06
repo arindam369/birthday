@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
+    <link rel="shortcut icon" href="./../static/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./wish.css">
-
 </head>
 
 <body>
     <video autoplay muted loop id="myVideo">
         <source src="./../static/bg.mp4" type="video/mp4">
     </video>
+
     <div id="wholepage">
-        
         <div class="container" id="container">
             <div class="card" id="card">
+                
                 <div class="imgBox">
-                    <img src="./../static/1.jpg" alt="">
-                    <img src="./../static/2.jpg" alt="">
+                    <img src="./../static/1.jpg">
+                    <img src="./../static/2.jpg">
                 </div>
 
                 <div class="details">
@@ -39,14 +40,10 @@
                         <h2>From</h2>
                         <h3>Nobita</h3>
 
-
                     </div>
-
                 </div>
 
-
             </div>
-
 
             <div class="wishText">
                 <span id="1">H</span>
@@ -68,7 +65,8 @@
 
                 &nbsp;
 
-                <span id="14">S</span>
+    <!--  Don't forget to set your shizuka's name here -->
+                <span id="14">S</span>      
                 <span id="15">h</span>
                 <span id="16">i</span>
                 <span id="17">z</span>
@@ -76,6 +74,7 @@
                 <span id="19">k</span>
                 <span id="20">a</span>
             </div>
+            
             <div class="balloons">
                 <figure>
                     <img id="b1" src="./../static/b1.png">
@@ -118,9 +117,9 @@
                     <img id="b10" src="./../static/b10.png">
                     <figcaption id="l10">A</figcaption>
                 </figure>
-
             </div>
-            <div class="blinkWishText" id="blinkWishText">
+
+            <div class="blinkWishText" id="blinkWishText">  <!-- Here also change the name -->
                 <span>H a p p y &nbsp; B i r t h D a y &nbsp; S h i z u k a</span>
             </div>
 
@@ -150,7 +149,7 @@
 
 
             <div id="gift-box-close">
-                <img src="./../static/box-closed2.png" alt="">
+                <img src="./../static/box-closed.png" alt="">
             </div>
             <div id="gift-box-open">
                 <img src="./../static/box-opened.png" alt="">
@@ -165,10 +164,10 @@
     </div>
 
 
-    <!-- cake button -->
     <div>
         <button id="cakeButton">Cake</button>
     </div>
+
     <div>
         <button id="cutCakeButton">Let's cut the Cake</button>
     </div>
@@ -176,13 +175,9 @@
 
     <button id="eatDoneButton">Eating Done?</button>
 
-
-
-
     <div class="music" id="music">
         <audio src="./../static/hbd.mp3" id="mymusic" autoplay hidden loop="loop" controls></audio>
     </div>
-
 
     <div class="back-button" id="back-button">
         <button type="submit">Back</button>

@@ -10,15 +10,11 @@ body{
 }
 #myVideo {
     position: fixed;
-    /* position: f; */
-    /* position:absolute; */
     right: 0;
     bottom: 0;
-    /* min-width: 100%; */
     min-height: 100%;
     width: 100%;
     object-fit: cover;
-    /* height: auto; */
   }
 body .container{
     display: flex;
@@ -37,6 +33,10 @@ body .container{
     border-radius: 15px;
     box-shadow: 13px 13px 20px rgba(0,0,0,0.45);
     transition: 2s;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
 }
 .card:hover{
     transform: translateX(50%);
@@ -51,7 +51,6 @@ body .container{
     left: 0px;
     padding: 5px 25px;
 }
-
 .imgBox{
     position: relative;
     z-index: 1;  /* position & z-index will help to hide detail-part */
@@ -88,9 +87,7 @@ body .container{
 }
 
 
-
-
-/* line styles */
+/*    Card line styles    */
 h5{                      /* hey */
     text-align: left;
     margin-bottom: 5px;
@@ -115,6 +112,8 @@ h3{             /* myname */
     margin-right: 28px;
     margin-top: 5px;
 }
+
+
 
 
 .back-button button{
@@ -169,8 +168,8 @@ h3{             /* myname */
 
 #cake img{
     height: 250px;
+    cursor: pointer;
 }
-
 #cakeButton{
     position: fixed;
     padding: 8px 25px;
@@ -197,6 +196,7 @@ h3{             /* myname */
 #cake-pieces img{
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 #c1,#c2,#c3,#c4,#c5,#c6{
     position: relative;
@@ -269,6 +269,7 @@ h3{             /* myname */
     transition: background-color 2s;
     background-color: green;
     margin-top: 25px;
+    cursor: pointer;
 }
 #giftButton:hover{
     filter: brightness(1.2);
@@ -276,10 +277,12 @@ h3{             /* myname */
 }
 #gift-box-close img{
     height: 20rem;
+    cursor: pointer;
 }
 #gift-box-open img{
     height: 20rem;
     position: relative;
+    cursor: pointer;
 }
 
 .gift-message{
@@ -313,9 +316,7 @@ figcaption{
 
 
 
-/* media queries */
-
-/* 1. Wish Card */
+/* =============== media queries ================= */
 
 @media (min-width:675px) and (max-width:900px) {
     .card{
@@ -382,7 +383,6 @@ figcaption{
         margin-right: 14px;
         margin-top: 5px;
     }
-
     #cutCakeButton{
         left: 37%;
     }

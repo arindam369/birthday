@@ -16,7 +16,6 @@ function openBombingPage(){
     location.replace("./../fireworks/bombing.html");
 }
 
-
 hiddenMessageCard();
 
 button.addEventListener("click",function(){

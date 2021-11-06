@@ -5,10 +5,8 @@ const chours = document.getElementById("hours");
 const cmins = document.getElementById("mins");
 const csecs = document.getElementById("secs");
 
-
 var birthDate, birthDay,datechange,timeDifference;
-
-birthDate = "2021-11-10";
+birthDate = "2021-11-10";   // Set your Shizuka's birthday date here
 
 function updateDOM() {
 

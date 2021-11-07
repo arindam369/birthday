@@ -54,9 +54,9 @@ li span{
 @media (max-width:500px){
     
     .countdown-progress-box{
-        height: 230px;
+        height: 200px;
         width: 270px;
-        padding: 20px;
+        padding: 20px 10px;
     }    
     #heading{
         font-size: 1.6rem;
@@ -65,12 +65,12 @@ li span{
     li{
         list-style: none;
         display: inline-block;
-        margin: 50px 7px;
-        font-size: .7rem;
+        margin: 35px 7px;
+        font-size: .55rem;
     }
     li span{
         display: block;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     ul{
         margin-bottom: 20px;
